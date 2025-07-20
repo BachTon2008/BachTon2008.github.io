@@ -1,0 +1,134 @@
+@media screen and (max-width: 576px) {
+  /* ========== NAVBAR ========== */
+  #nav-bar nav.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* căn sát trái */
+    padding: 16px;
+    gap: 12px;
+    width: 100%;
+  }
+
+  #nav-bar a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #1d3557;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 6px 0;
+    width: 100%;
+  }
+
+  #nav-bar i.icon {
+    color: #1da1f2;
+    font-size: 18px;
+  }
+
+  .text-nav {
+    display: none;
+  }
+
+  /* ========== ABOUT SECTION ========== */
+  .about-grid {
+    display: flex; /* Thay đổi từ grid sang flex để xếp chồng các phần tử */
+    flex-direction: column; /* Xếp chồng theo chiều dọc */
+    gap: 16px; /* Khoảng cách giữa các phần tử con */
+    padding: 0 16px; /* Padding ngang cho about-grid */
+  }
+
+  #target,
+  #pesonal-info {
+    width: 100%; /* Đảm bảo khối chiếm toàn bộ chiều rộng có sẵn */
+    margin: 0; /* Loại bỏ margin nếu có từ CSS khác để căn lề sát */
+    background-color: #f5f5f5;
+    padding: 20px; /* Padding bên trong khối */
+    border-radius: 4px;
+  }
+
+  .submit-email {
+    width: 100%;
+  }
+
+  #target {
+    /* Quy tắc riêng cho #target, sẽ ghi đè padding từ quy tắc phía trên nếu cần */
+    text-align: justify; /* **Quan trọng**: Căn đều văn bản sang hai bên, giúp chữ xuống dòng gọn gàng */
+    font-size: 14px;
+    padding-bottom: 16px;
+    line-height: 1.6; /* Tăng khoảng cách dòng để dễ đọc */
+  }
+
+  /* Thêm quy tắc cho tiêu đề để đảm bảo nó gọn gàng trên mobile */
+  .section-title {
+    font-size: 20px; /* Kích thước phù hợp cho mobile */
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+
+  /* Đảm bảo thẻ p bên trong #target cũng có font-size và line-height nhất quán */
+  #target p {
+    font-size: 14px;
+    line-height: 1.6;
+    padding-bottom: 15px; /* Khoảng cách dưới cùng */
+  }
+  /* Điều chỉnh job-grid, cer-grid, project-grid cho mobile: 1 cột */
+  .job-grid,
+  .cer-grid,
+  .project-grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+    column-gap: 0 !important;
+    row-gap: 20px !important;
+  }
+
+  /* Đảm bảo cer-content được căn giữa và xếp chồng */
+  .cer-content {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .img-cc {
+    width: 200px !important; /* Giảm kích thước ảnh chứng chỉ */
+    height: auto !important;
+  }
+  .cer-content-2,
+  .cer-content-3 {
+    border-left: none !important;
+    border-top: 2px solid #d6c08d !important;
+    padding-left: 0 !important;
+    padding-top: 20px !important;
+  }
+
+  /* Điều chỉnh nav-bar trên mobile */
+  #nav-bar .container {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  #nav-bar .text-nav {
+    display: none !important;
+  }
+  #nav-bar a {
+    padding: 15px 5px !important;
+    font-size: 12px !important;
+  }
+  /* css/mobile.css */
+
+  /* Áp dụng cho màn hình tối đa 576px */
+
+  #footer .container {
+    gap: 15px; /* Khoảng cách giữa các icon trên mobile */
+  }
+
+  #footer .container a {
+    /* Đây là thủ thuật để ẩn chữ */
+    font-size: 0; /* Đặt font-size của link về 0 để chữ biến mất */
+    /* padding: 5px 0; Nếu muốn tăng diện tích chạm cho icon */
+    justify-content: center; /* Để icon căn giữa nếu chỉ có icon */
+  }
+
+  #footer .container a i {
+    font-size: 30px; /* Đặt lại font-size cho icon để nó hiển thị */
+    margin-right: 0; /* Loại bỏ khoảng cách với chữ */
+    margin-bottom: 0; /* Đảm bảo không có margin không mong muốn */
+    /* color: #555; (có thể đặt lại màu nếu cần) */
+  }
+}

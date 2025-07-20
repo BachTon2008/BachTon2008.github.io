@@ -1,0 +1,70 @@
+/* Sử dụng Media Query cho màn hình máy tính bảng */
+@media screen and (min-width: 577px) and (max-width: 1200px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .box {
+    margin-bottom: 15px;
+  }
+
+  /* Di chuyển box Timeline xuống cuối cùng */
+  .timeline-box {
+    order: 99;
+  }
+
+  /* Sắp xếp mục theo chiều dọc, với icon ở trên, chữ ở dưới */
+  .goal,
+  .member,
+  .primary-item {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 5px;
+  }
+
+  /* Căn lề trái cho nội dung văn bản bên trong */
+  .goal-text,
+  .member-name,
+  .primary-item p {
+    text-align: left;
+    width: 100%;
+  }
+
+  /* Điều chỉnh Scopes */
+  .scopes .scope-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .scope-column {
+    width: 100%;
+    text-align: left;
+  }
+
+  .scope-column h4 {
+    text-align: center;
+  }
+
+  /* Điều chỉnh Timeline */
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+
+  .timeline-circle {
+    margin-bottom: 5px;
+  }
+
+  .timeline-item b {
+    display: block;
+  }
+}

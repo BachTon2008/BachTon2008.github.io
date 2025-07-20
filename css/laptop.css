@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+body {
+  font-family: "lato", sans-serif;
+  line-height: 1.5;
+  color: #1d3557;
+}
+
+section > .container {
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: 30 15px;
+}
+
+#nav-bar {
+  text-align: center;
+}
+/* Banner */
+.img-banner {
+  position: relative;
+  background-image: url(../images/banner.jpg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  filter: brightness(50%);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.text-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.text-banner h1 {
+  text-transform: uppercase;
+}
+
+.text-banner span {
+  color: rgb(227, 231, 235);
+}
+/* end-banner */
+
+/* Nav-bar */
+#nav-bar a:link,
+a:visited {
+  text-decoration: none;
+  color: #1d3557;
+  text-transform: uppercase;
+  border-left: 2px solid white;
+  padding: 60px 40px 3px;
+}
+
+#nav-bar a:hover,
+a:active {
+  font-weight: bold;
+  cursor: grab;
+}
+
+.text-nav {
+  display: inline-block;
+  margin: 10px 70px 0;
+  font-size: 5px;
+  position: relative;
+}
+.avt-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.avt-default {
+  width: 180px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid white;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  color: rgb(78, 151, 220);
+  font-weight: bold;
+}
+
+/* info */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 40px;
+  line-height: 2;
+  margin-top: 40px;
+}
+
+li span {
+  font-weight: bold;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+#pesonal-info {
+  padding: 0 200px 80px 30px;
+
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+#target {
+  padding: 40px 30px;
+
+  margin-bottom: 30px;
+}
+
+/* phan 4 */
+.job-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  row-gap: 20px;
+  align-items: start;
+}
+
+.job-box-grid {
+  position: relative;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Ẩn nội dung mặc định */
+.job-box-grid .job-content {
+  display: none;
+}
+
+/* dding dang nut viewmore vaf view less*/
+.view-btn {
+  margin-top: 15px;
+
+  /* Tạo hiệu ứng sinh động */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  /* Ẩn nút ban đầu */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+}
+
+/* Hiệu ứng khi di chuột vào nút */
+.view-btn:hover {
+  background-color: #4d70bd;
+  transform: translateY(-2px);
+}
+
+/* Hiển thị nút khi di chuột vào khối cha */
+.job-box-grid:hover .view-btn {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.view-btn .arrow {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 1.2em;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.job-box-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border: 1px solid #ccc;
+  padding: 24px;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.now {
+  background-color: rgb(36, 131, 219);
+  padding: 4px 8px;
+  color: #dff1fa;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.list {
+  position: relative;
+}
+.list1 {
+  position: relative;
+}
+
+.job-node::before {
+  content: "•";
+  color: rgb(14, 174, 174);
+  font-weight: bolder;
+  display: inline-block;
+  font-size: 30px;
+  position: absolute;
+  left: -30px;
+  top: -10px;
+}
+/* icon-Sở thích */
+
+.icon-rounding {
+  width: 50px;
+  height: 50px;
+  color: rgb(62, 206, 206);
+  border: 2px solid rgb(57, 181, 181);
+  padding: 10px;
+  border-radius: 50%;
+}
+.rounding {
+  color: rgb(62, 206, 206);
+  border: 2px solid rgb(57, 181, 181);
+  padding: 13px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+/* Ngôn ngữ */
+.good {
+  background-color: #109eeb;
+  display: inline-block;
+  height: 3px;
+  width: 40px;
+  margin-right: 10px;
+}
+.bad {
+  background-color: #ececec;
+  display: inline-block;
+  height: 3px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* chứng chỉ */
+#certificates {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.cer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+  row-gap: 30px;
+}
+.img-cc {
+  width: 240px;
+  margin-right: 10px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cer-content {
+  display: flex;
+  gap: 20px;
+}
+.cer-content-2 {
+  padding-left: 20px;
+  border-left: 2px solid #d6c08d;
+}
+.cer-content-3 {
+  grid-column: 1/-1;
+  padding-top: 20px;
+  border-top: 2px solid #d6c08d;
+}
+/* project */
+#project {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+}
+.project-flex {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.project-title {
+  padding: 20px;
+  border-left: 2px solid #bdc3c7;
+  border-right: 2px solid #bdc3c7;
+  font-weight: bold;
+  font-size: 18px;
+}
+.project-border {
+  padding: 5px;
+  border-top: 2px solid #bdc3c7;
+  border-left: 2px solid #bdc3c7;
+  border-right: 2px solid #bdc3c7;
+}
+table {
+  border-collapse: collapse;
+}
+td {
+  padding: 10px;
+}
+tr td:first-child {
+  width: 100px;
+  vertical-align: top;
+  font-weight: bold;
+}
+tr {
+  border: 2px solid #bdc3c7;
+}
+/* Footer# */
+#footer {
+  line-height: 1.5;
+  text-align: center;
+  margin: 30px 30px;
+}
+#footer a:link,
+a:visited {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 50px;
+  text-decoration: none;
+}
+#footer a:hover,
+a:active {
+  cursor: grab;
+  color: darkturquoise;
+}
+
+#banner {
+  position: relative;
+  text-align: center;
+  padding-bottom: 80px; /* tạo không gian cho avatar */
+}
+
+#banner {
+  position: relative;
+  text-align: center;
+  padding-bottom: 100px; /* dành chỗ cho avatar */
+}
+
+.section-content {
+  display: none;
+
+  margin-top: 20px;
+  padding: 10px;
+}
+/* css error email */
+#error-email {
+  color: red;
+  font-size: 14px;
+  font-weight: 600;
+}
+.job-icon {
+  font-size: 24px;
+  color: #aaa;
+  margin-left: auto;
+  flex-shrink: 0;
+  align-self: center;
+  display: grid;
+  align-items: center;
+  line-height: 1;
+  margin-bottom: 30px;
+  margin-top: 0%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.job-box {
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 100px 500px;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Tiêu đề + icon bên phải, căn ngang hàng */
+
+.job-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.job-title h1 {
+  padding-top: 30px;
+  margin-top: 30px;
+  font-size: 25px;
+  color: #1d3557;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+/*  */
+
+/* Nội dung job-box */
+/* Ẩn nội dung chính ban đầu */
+/* .job-content {
+  display: none; /* Sử dụng display: none/block cho đơn giản */
+/* Các style font-size, margin-bottom của p, v.v. bạn đã có */
+/* font-size: 18px; */
+/* }  */
+
+.job-content p,
+.job-content li {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 6px;
+}
+/*  */
+.job-node {
+  position: relative;
+  padding-left: 14px;
+  font-weight: bold;
+}
+
+.job-node::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #109eeb;
+  font-size: 22px;
+  line-height: 1;
+}
+
+/* Badge "Hiện tại" */
+.now {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 8px;
+  background-color: #257de0;
+  color: #fff;
+  font-size: 12px;
+}
+
+/* Icon nhỏ dùng cho phần sở thích */
+.rounding {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  color: #0088cc;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin: 16px;
+}
+
+/* Đảm bảo mọi item trong grid có cùng chiều cao */
+.job-grid > .job-box-grid {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Reset khoảng trắng không mong muốn */
+.job-box-grid > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Chống nhảy lưới do content ngắn */
+.job-content {
+  flex-grow: 1;
+}

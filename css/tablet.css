@@ -1,0 +1,163 @@
+@media screen and (min-width: 577px) and (max-width: 1200px) {
+  #nav-bar nav.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+    width: 100%;
+  }
+
+  #nav-bar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #1d3557;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 12px 0;
+    border-right: 1px solid #ccc;
+  }
+
+  #nav-bar a:last-child {
+    border-right: none;
+  }
+
+  #nav-bar i.icon {
+    color: #1da1f2;
+    font-size: 20px;
+  }
+
+  .text-nav {
+    display: none;
+  }
+
+  /* ========== ABOUT SECTION (2 CỘT) ========== */
+  /* About grid chia 2 cột */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 24px;
+    align-items: start;
+  }
+
+  /* Mỗi khối có nền xám và padding hợp lý */
+  #target,
+  #pesonal-info {
+    background-color: #f5f5f5;
+    padding: 24px;
+    border-radius: 4px;
+    font-size: 15px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  #pesonal-info ul li {
+    line-height: 1.8;
+    font-size: 15px;
+  }
+
+  .icon {
+    margin-top: 16px;
+  }
+
+  .icon i {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #1da1f2;
+  }
+
+  .submit-email {
+    margin-top: 16px;
+  }
+
+  .submit-email input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .submit-email button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .job-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    column-gap: 30px !important; /* Khoảng cách cột */
+    row-gap: 30px !important; /* Khoảng cách hàng */
+  }
+
+  .cer-grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+    column-gap: 0 !important;
+    row-gap: 30px !important;
+    justify-items: center;
+  }
+
+  .cer-content {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 15px !important;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .img-cc {
+    width: 150px !important;
+    height: auto !important;
+  }
+  .cer-content-2,
+  .cer-content-3 {
+    border-left: none !important;
+    border-top: 2px solid #d6c08d !important;
+    padding-left: 0 !important;
+    padding-top: 20px !important;
+  }
+  .cer-content-3 {
+    grid-column: 1 / -1 !important;
+  }
+
+  /* Điều chỉnh project-grid (Dự án): 2 cột */
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    column-gap: 30px !important;
+    row-gap: 30px !important;
+  }
+
+  #nav-bar .container {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+  #nav-bar .text-nav {
+    display: none !important;
+  }
+  #nav-bar a {
+    padding: 20px 10px !important;
+    font-size: 14px !important;
+  }
+  /* css/tablet.css */
+
+  /* Áp dụng cho màn hình từ 577px đến 1200px */
+
+  #footer .container {
+    gap: 25px; /* Điều chỉnh khoảng cách cho tablet */
+  }
+
+  #footer .container a {
+    font-size: 17px;
+  }
+
+  #footer .container a i {
+    font-size: 36px;
+    margin-right: 4px;
+  }
+}
