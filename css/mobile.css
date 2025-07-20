@@ -30,20 +30,19 @@
     display: none;
   }
 
-  /* ========== ABOUT SECTION ========== */
   .about-grid {
-    display: flex; /* Thay đổi từ grid sang flex để xếp chồng các phần tử */
-    flex-direction: column; /* Xếp chồng theo chiều dọc */
-    gap: 16px; /* Khoảng cách giữa các phần tử con */
-    padding: 0 16px; /* Padding ngang cho about-grid */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px;
   }
 
   #target,
   #pesonal-info {
-    width: 100%; /* Đảm bảo khối chiếm toàn bộ chiều rộng có sẵn */
-    margin: 0; /* Loại bỏ margin nếu có từ CSS khác để căn lề sát */
+    width: 100%;
+    margin: 0;
     background-color: #f5f5f5;
-    padding: 20px; /* Padding bên trong khối */
+    padding: 20px;
     border-radius: 4px;
   }
 
@@ -52,25 +51,22 @@
   }
 
   #target {
-    /* Quy tắc riêng cho #target, sẽ ghi đè padding từ quy tắc phía trên nếu cần */
-    text-align: justify; /* **Quan trọng**: Căn đều văn bản sang hai bên, giúp chữ xuống dòng gọn gàng */
+    text-align: justify;
     font-size: 14px;
     padding-bottom: 16px;
-    line-height: 1.6; /* Tăng khoảng cách dòng để dễ đọc */
+    line-height: 1.6;
   }
 
-  /* Thêm quy tắc cho tiêu đề để đảm bảo nó gọn gàng trên mobile */
   .section-title {
-    font-size: 20px; /* Kích thước phù hợp cho mobile */
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 12px;
   }
 
-  /* Đảm bảo thẻ p bên trong #target cũng có font-size và line-height nhất quán */
   #target p {
     font-size: 14px;
     line-height: 1.6;
-    padding-bottom: 15px; /* Khoảng cách dưới cùng */
+    padding-bottom: 15px;
   }
   /* Điều chỉnh job-grid, cer-grid, project-grid cho mobile: 1 cột */
   .job-grid,
@@ -110,25 +106,20 @@
     padding: 15px 5px !important;
     font-size: 12px !important;
   }
-  /* css/mobile.css */
-
-  /* Áp dụng cho màn hình tối đa 576px */
 
   #footer .container {
-    gap: 15px; /* Khoảng cách giữa các icon trên mobile */
+    gap: 15px;
   }
 
   #footer .container a {
-    /* Đây là thủ thuật để ẩn chữ */
-    font-size: 0; /* Đặt font-size của link về 0 để chữ biến mất */
-    /* padding: 5px 0; Nếu muốn tăng diện tích chạm cho icon */
-    justify-content: center; /* Để icon căn giữa nếu chỉ có icon */
+    font-size: 0;
+
+    justify-content: center;
   }
 
   #footer .container a i {
-    font-size: 30px; /* Đặt lại font-size cho icon để nó hiển thị */
-    margin-right: 0; /* Loại bỏ khoảng cách với chữ */
-    margin-bottom: 0; /* Đảm bảo không có margin không mong muốn */
-    /* color: #555; (có thể đặt lại màu nếu cần) */
+    font-size: 30px;
+    margin-right: 0;
+    margin-bottom: 0;
   }
 }

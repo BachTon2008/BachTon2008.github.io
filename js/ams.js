@@ -19,33 +19,6 @@ function handleSubmit() {
   }
 }
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   // Lấy tất cả các "job-box-grid" (hộp kinh nghiệm, học vấn, v.v.)
-//   const jobBoxes = document.querySelectorAll(".job-box-grid");
-
-//   jobBoxes.forEach((box) => {
-//     // Tạo nút "View More" cho mỗi hộp
-//     const viewBtn = document.createElement("div");
-//     viewBtn.classList.add("view-btn");
-//     viewBtn.textContent = "View More";
-//     box.appendChild(viewBtn);
-
-//     // Lấy nội dung cần ẩn/hiện
-//     const content = box.querySelector(".job-content");
-
-//     // Thêm sự kiện click cho nút "View More/Less"
-//     viewBtn.addEventListener("click", function () {
-//       // Toggle (thay đổi trạng thái) hiển thị của nội dung
-//       if (content.style.display === "block" || content.style.display === "") {
-//         content.style.display = "none";
-//         viewBtn.textContent = "View More";
-//       } else {
-//         content.style.display = "block";
-//         viewBtn.textContent = "View Less";
-//       }
-//     });
-//   });
-// });
 document.addEventListener("DOMContentLoaded", function () {
   const jobBoxes = document.querySelectorAll(".job-box-grid");
 
